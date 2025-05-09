@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Correction CIAM Terminal SE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,29 +21,25 @@
     <!-- FedaPay Integration -->
     <button id="pay-btn" class="btn-pay">Payer maintenant</button>
 
-
     <script type="text/javascript">
- FedaPay.init('#pay-btn', {
-  public_key: 'pk_sandbox_zsb0ssqAhLbKCUktv7R3h6Lz',
-  transaction: {
-    amount: 2500,
-    description: 'Correction CIAM Terminal SE'
-  },
-  customer: {
-    email: 'mohamedaminetidjani3@gmail.com',
-    lastname: 'Hisham',
-    firstname: 'Muhammad'
-  },
-  success_url: 'https://tidjani12345.github.io/correction-ciam/sucess.html',
-  cancel_url: 'https://tidjani12345.github.io/correction-ciam/cancel.html'
-});
+      FedaPay.init('#pay-btn', {
+        public_key: 'pk_sandbox_zsb0ssqAhLbKCUktv7R3h6Lz',
+        transaction: {
+          amount: 2500,
+          description: 'Correction CIAM Terminal SE'
+        },
+        customer: {
+          email: 'mohamedaminetidjani3@gmail.com',
+          lastname: 'Hisham',
+          firstname: 'Muhammad'
+        },
+        success_url: 'https://tidjani12345.github.io/correction-ciam/sucess.html',
+        cancel_url: 'https://tidjani12345.github.io/correction-ciam/cancel.html'
+      });
+    </script>
 
-</script>
-
-    
-    <!-- Conteneur pour FedaPay -->
     <div id="embed"></div>
-
+  </div>
 
 </body>
 </html>

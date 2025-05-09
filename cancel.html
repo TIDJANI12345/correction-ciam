@@ -3,30 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Paiement annulé</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
+      margin: 0;
       padding: 20px;
     }
+
     .container {
+      max-width: 95%;
+      width: 100%;
+      margin: 0 auto;
       text-align: center;
-      padding: 50px;
+      padding: 40px 20px;
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
+
     h1 {
-      color: red;
+      color: #e74c3c;
+      font-size: 24px;
+      margin-bottom: 10px;
     }
+
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+
     .btn-back {
-      padding: 15px 30px;
-      background: #000;
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 25px;
+      background: #333;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: #000;
     }
   </style>
 </head>
