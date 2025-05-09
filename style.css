@@ -1,77 +1,62 @@
-/* Style global */
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
+ body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 20px;
+    }
 
-.product {
-  max-width: 400px;
-  width: 100%;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
-  position: relative;
-  text-align: center;
-}
+    .product {
+      position: relative;
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-.promo-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: red;
-  color: white;
-  padding: 6px 12px;
-  font-weight: bold;
-  font-size: 13px;
-  border-radius: 5px;
-}
+    .promo-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      padding: 5px 10px;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 14px;
+    }
 
-.product img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 30px;
-}
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
 
-h2 {
-  font-size: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
+    .price {
+      margin-top: 10px;
+      font-size: 18px;
+    }
 
-.price {
-  font-size: 16px;
-  margin: 10px 0;
-}
+    .price del {
+      color: #888;
+      margin-right: 10px;
+    }
 
-.price del {
-  color: #888;
-  margin-right: 10px;
-}
+    .price strong {
+      color: green;
+      font-size: 22px;
+    }
 
-.price strong {
-  color: green;
-  font-size: 22px;
-}
-
-.btn-pay {
-  margin-top: 20px;
-  background: #000;
-  color: white;
-  padding: 14px 25px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.btn-pay:hover {
-  background-color: #333;
-}
+    .btn-pay {
+      margin-top: 20px;
+      background: #000;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+    }
 
 /* Media Queries for Responsive Design */
 
