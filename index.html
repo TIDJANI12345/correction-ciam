@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Correction CIAM Terminal SE</title>
+  <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="product">
+    <div class="promo-badge">En promo</div>
+    <img src="images/SE.jpg" alt="Correction CIAM Terminal SE">
+    <h2>Correction CIAM Terminal SE</h2>
+    <div class="price">
+      <del>5.000 FCFA</del>
+      <strong>2.500 FCFA</strong>
+    </div>
+
+    <!-- FedaPay Integration -->
+    <button id="pay-btn" class="btn-pay">Payer maintenant</button>
+
+
+    <script type="text/javascript">
+ FedaPay.init('#pay-btn', {
+  public_key: 'pk_sandbox_zsb0ssqAhLbKCUktv7R3h6Lz',
+  transaction: {
+    amount: 2500,
+    description: 'Correction CIAM Terminal SE'
+  },
+  customer: {
+    email: 'mohamedaminetidjani3@gmail.com',
+    lastname: 'Hisham',
+    firstname: 'Muhammad'
+  },
+  success_url: 'http://127.0.0.1/Education/success.php',
+  cancel_url: 'http://127.0.0.1/Education/cancel.php'
+});
+
+</script>
+
+    
+    <!-- Conteneur pour FedaPay -->
+    <div id="embed"></div>
+
+
+</body>
+</html>
