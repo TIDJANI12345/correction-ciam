@@ -3,46 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Merci pour votre achat</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    body {
+      margin: 0;
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+    }
 
     .merci {
-  text-align: center;
-  padding: 40px 15px;
-  font-family: Arial, sans-serif;
-}
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-.merci h1 {
-  font-size: 22px;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
+    .merci h1 {
+      font-size: 24px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
 
-.merci p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
+    .merci p {
+      font-size: 17px;
+      color: #555;
+      margin-bottom: 25px;
+    }
 
-.btn-telecharger {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #1abc9c;
-  color: #fff;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  margin-top: 20px;
-}
+    .btn-telecharger {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #1abc9c;
+      color: #fff;
+      font-size: 17px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
 
-.btn-telecharger:hover {
-  background-color: #16a085;
-}
+    .btn-telecharger:hover {
+      background-color: #16a085;
+    }
 
+    @media (max-width: 480px) {
+      .merci {
+        padding: 40px 15px;
+      }
+
+      .merci h1 {
+        font-size: 22px;
+      }
+
+      .merci p {
+        font-size: 16px;
+      }
+
+      .btn-telecharger {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
   </style>
-
 </head>
 <body>
   <div class="merci">
@@ -53,12 +73,5 @@
       📥 Télécharger la correction maintenant
     </a>
   </div>
-
-  <script>
-  setTimeout(function() {
-   window.location.href = "https://tidjani12345.github.io/correction-ciam/merci.html";
-  }, 5000); // Redirection après 5 secondes
-</script>
-
 </body>
 </html>
