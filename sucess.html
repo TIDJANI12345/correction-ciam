@@ -2,46 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Confirmation de paiement</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 20px;
-    }
-    .container {
-      text-align: center;
-      padding: 50px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: green;
-    }
-    .btn-download {
-      padding: 15px 30px;
-      background: #000;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-    }
-  </style>
+  <title>Merci pour votre achat</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Merci pour votre paiement !</h1>
-    <p>Votre paiement a été validé avec succès. Cliquez ci-dessous pour télécharger votre produit.</p>
-    <a href="https://tidjani12345.github.io/correction-ciam/D/SE.pdf" class="btn-download">Télécharger le produit</a>
+  <div class="merci">
+    <h1>🎉 Merci pour votre achat !</h1>
+    <p>Votre paiement a été effectué avec succès.</p>
+    
+    <a href="D/SE.pdf" download class="btn-telecharger">
+      📥 Télécharger la correction maintenant
+    </a>
   </div>
-
-  <script>
-  setTimeout(function() {
-   window.location.href = "https://tidjani12345.github.io/correction-ciam/merci.html";
-
-  }, 5000); // Redirection après 5 secondes
-</script>
-
 </body>
 </html>
